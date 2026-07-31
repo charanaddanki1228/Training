@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="showMessage()">Click Me</button>
+<h2 id="msg">Loading...</h2>
+<button onclick="changeText()">Load Data</button>
+<button onclick="changeColor()">Change Color</button>
+<script>
+
+function showMessage(){
+    setTimeout(function(){
+        alert("Welcome to JavaScript!");
+    },3000);
+
+}
+function changeText(){
+    setTimeout(function(){
+        document.getElementById("msg").innerHTML="Data Loaded Successfully";
+    },2000);
+
+}
+function changeColor(){
+
+    setTimeout(function(){
+
+        document.body.style.backgroundColor="lightgreen";
+
+    },3000);
+
+}
+
+</script>
+
+</body>
+</html>
